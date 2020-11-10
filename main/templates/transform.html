@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Обработываем данные в Базе данных</title>
+  </head>
+
+  <body>
+    <! -- {{ posts }} так передаются переменные из Django -->
+      <h1>Обработка постов 📑 в базе данных 🖥</h1>
+      {{ posts }} <br>
+      {{ split_posts }} <br>
+      {{ norm_posts }} <br>
+      <h1>Обработка Комментариев 📢 в базе данных 🖥</h1>
+      {{ comments }} <br>
+      {{ split_comments }} <br>
+      {{ norm_comments }} <br>
+      <h2><a href="{% url 'visualization' %}?ID={{ ID }}&COUNT={{ COUNT }}">Показать визуализацию полученных данных 📈📊</a></h2>
+  </body>
+</html>

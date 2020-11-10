@@ -1,0 +1,11 @@
+notebook
+ipywidgets
+ipykernel
+numpy
+pandas
+matplotlib
+seaborn
+requests
+pymongo
+django
+pymorphy2

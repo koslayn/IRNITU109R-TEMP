@@ -41,7 +41,7 @@ def __param_cheker_owner_id(OWNER_ID=None):
 
 def __param_cheker_vk_token(VK_TOKEN=None):
     if VK_TOKEN is None and __ask_credentials() is None:
-        warnings.warn('Отсутствует ключ, для обновления данныхв параметре <VK_TOKEN> и в файле <__credentials.txt>, данные не будут обновлены')
+        warnings.warn('Отсутствует ключ, для обновления данных в параметре <VK_TOKEN> и в файле <__credentials.txt>, данные не будут обновлены')
         return False
     else:
         return True
@@ -57,7 +57,7 @@ def __param_cheker_post_id(post_id=None):
 def get_posts(count=1, offset=0, OWNER_ID=-66669811, VK_TOKEN=None):
     """
     Получаем посты из сообщества VK:
-        * count: количество запрашиваемыз постов (не более 100 за раз),
+        * count: количество запрашиваемых постов (не более 100 за раз),
         * offset:смещение относительно последнего доступного поста,
         * OWNER_ID - id сообщества,
         * VK_TOKEN - ключ от приложения в ВК
